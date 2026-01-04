@@ -54,34 +54,53 @@ npm run dev
 ## 📁 Project Structure
 backend-auth-dashboard/
 ├── src/
-│ ├── config/
-│ │ └── db.js
-│ ├── controllers/
-│ │ ├── authController.js
-│ │ ├── userController.js
-│ │ └── taskController.js
-│ ├── models/
-│ │ ├── User.js
-│ │ └── Task.js
-│ ├── routes/
-│ │ ├── authRoutes.js
-│ │ ├── userRoutes.js
-│ │ └── taskRoutes.js
-│ └── server.js
+│   ├── config/
+│   │   └── db.js
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── userController.js
+│   │   └── taskController.js
+│   ├── models/
+│   │   ├── User.js
+│   │   └── Task.js
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── userRoutes.js
+│   │   └── taskRoutes.js
+│   └── server.js
+├── utils/
+│   └── logger.js
+├── logs/
+│   └── app.log
 ├── .env
 ├── package.json
 └── README.md
 
 
 
----
+
+
+```
+## Logging System
+This project includes a custom logging system that:
+
+1-logs server startup
+2-logs database connection status
+3-logs all API requests
+4-logs runtime errors
+
+logs are stored in 
+```
+logs/app.log
+```
+
 
 ## 🔧 Installation & Setup
 
 ```bash
 npm install
 
-
+```
 ## run
 npm run dev
 
