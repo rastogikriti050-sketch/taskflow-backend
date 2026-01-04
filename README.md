@@ -72,3 +72,17 @@ backend-auth-dashboard/
 ├── package.json
 └── README.md
 
+
+
+---
+
+## 🔧 Installation & Setup
+
+```bash
+npm install
+
+
+## run
+npm run dev
+
+
