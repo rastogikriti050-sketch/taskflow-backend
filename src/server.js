@@ -1,3 +1,7 @@
+import { log, error } from "../utils/logger.js";
+
+log("Server starting...");
+
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
@@ -11,6 +15,11 @@ dotenv.config();
 connectDB();
 
 const app = express();
+app.use((req, res, next) => {
+  log(`${req.method} ${req.url}`);
+  next();
+});
+
 
 // 🛡️ Allow frontend to access backend
 app.use(
